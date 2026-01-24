@@ -1,4 +1,8 @@
+.DS_Store
+data-engineering-zoomcamp/
 *.parquet
+
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

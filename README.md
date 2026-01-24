@@ -1,2 +1,0 @@
-# DEZ
-Data Engineer Zoomcamp
