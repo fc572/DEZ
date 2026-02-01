@@ -1,0 +1,11 @@
+1)yellow_tripdata_2020-12.csv = 134.5
+
+2) green_tripdata_2020-04.csv
+
+3) 13,537.299
+
+4) 1,734,051
+
+5) 1,925,152
+
+Add a timezone property set to America/New_York in the Schedule trigger configuration

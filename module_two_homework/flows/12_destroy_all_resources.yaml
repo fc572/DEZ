@@ -1,0 +1,25 @@
+id: 12_destroy_all_resources_gcp
+namespace: zoomcamp
+
+tasks:
+  - id: gcp_project_id
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_PROJECT_ID
+    kvType: STRING
+    value: "{{kv('GCP_PROJECT_ID')}}"
+
+  - id: delete_bucket
+    type: io.kestra.plugin.gcp.gcs.DeleteBucket
+    name: "{{kv('GCP_BUCKET_NAME')}}"
+
+  - id: delete_dataset
+    type: io.kestra.plugin.gcp.bigquery.DeleteDataset
+    name: "{{kv('GCP_DATASET')}}"
+    deleteContents: true
+
+pluginDefaults:
+  - type: io.kestra.plugin.gcp
+    values:
+      projectId: "{{kv('GCP_PROJECT_ID')}}"
+      location: "{{kv('GCP_LOCATION')}}"
+      bucket: "{{kv('GCP_BUCKET_NAME')}}"

@@ -386,6 +386,7 @@ dev = [
     { name = "jupyter" },
     { name = "pgcli" },
     { name = "pytest" },
+    { name = "pyyaml" },
 ]
 
 [package.metadata]
@@ -402,6 +403,7 @@ dev = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "pgcli", specifier = ">=4.4.0" },
     { name = "pytest", specifier = ">=9.0.2" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
 ]
 
 [[package]]

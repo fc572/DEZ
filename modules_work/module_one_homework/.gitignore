@@ -1,8 +1,0 @@
-*my_secret_key.json
-
-.terraform
-.terraform.lock.hcl
-terraform.tfstate*
-
-
-.idea/
